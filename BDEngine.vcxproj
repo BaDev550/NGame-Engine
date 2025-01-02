@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\ScriptingComponent\CScriptingComponent.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\RigidBodyComponent\CRigidBodyComponent.h" />
+    <ClInclude Include="Engine\imgui\dirent\dirent.h" />
+    <ClInclude Include="Engine\imgui\imconfig.h" />
+    <ClInclude Include="Engine\imgui\imgui.h" />
+    <ClInclude Include="Engine\imgui\ImGuiFileDialog.h" />
+    <ClInclude Include="Engine\imgui\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="Engine\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Engine\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Engine\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Engine\imgui\imgui_internal.h" />
+    <ClInclude Include="Engine\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Engine\imgui\imstb_textedit.h" />
+    <ClInclude Include="Engine\imgui\imstb_truetype.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\TransformComponent\CTransformComponent.h" />
+    <ClInclude Include="Engine\include\GameEngine\Scene\Debug\DebugDraw.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\BoxCollisionComponent\CBoxColliderComponent.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\Component.h" />
+    <ClInclude Include="Engine\include\RenderEngine\Camera\Camera.h" />
+    <ClInclude Include="Engine\include\GameEngine\BDEngine.h" />
+    <ClInclude Include="Engine\include\RenderEngine\BDE3DRenderEngine.h" />
+    <ClInclude Include="Engine\include\RenderEngine\Shader\Shader.h" />
+    <ClInclude Include="Engine\include\RenderEngine\Shader\Texture.h" />
+    <ClInclude Include="Engine\include\RenderEngine\SkyBox\SkyBox.h" />
+    <ClInclude Include="Engine\include\ResourceManager.h" />
+    <ClInclude Include="Engine\include\GameEngine\GameObject.h" />
+    <ClInclude Include="Engine\include\RenderEngine\Mesh\Mesh.h" />
+    <ClInclude Include="Engine\include\GameEngine\Components\StaticMeshComponent\CStaticMeshComponent.h" />
+    <ClInclude Include="Engine\include\GameEngine\Scene\Scene.h" />
+    <ClInclude Include="Engine\include\GameEngine\Scene\Raycast\RayCast.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Content\Script.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\ScriptingComponent\CScriptingComponent.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\RigidBodyComponent\CRigidBodyComponent.cpp" />
+    <ClCompile Include="Engine\imgui\imgui.cpp" />
+    <ClCompile Include="Engine\imgui\ImGuiFileDialog.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Engine\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\TransformComponent\CTransformComponent.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Scene\Debug\DebugDraw.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\BoxCollisionComponent\CBoxColliderComponent.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\Component.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\BDEngine.cpp" />
+    <ClCompile Include="Engine\source\RenderEngine\BDE3DRenderEngine.cpp" />
+    <ClCompile Include="Engine\glad.c" />
+    <ClCompile Include="Engine\source\RenderEngine\Shader\Shader.cpp" />
+    <ClCompile Include="Engine\source\RenderEngine\Shader\Texture.cpp" />
+    <ClCompile Include="Engine\source\RenderEngine\SkyBox\SkyBox.cpp" />
+    <ClCompile Include="Engine\source\ResourceManager.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\GameObject.cpp" />
+    <ClCompile Include="Game\main.cpp" />
+    <ClCompile Include="Engine\source\RenderEngine\Mesh\Mesh.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Components\StaticMeshComponent\CStaticMeshComponent.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Scene\Scene.cpp" />
+    <ClCompile Include="Engine\source\GameEngine\Scene\Raycast\RayCast.cpp" />
+    <ClCompile Include="stb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\shaders\ComplexShaders\Default.frag" />
+    <None Include="resources\shaders\ComplexShaders\Default.vert" />
+    <None Include="resources\shaders\DebugDrawing\Debug.frag" />
+    <None Include="resources\shaders\DebugDrawing\Debug.vert" />
+    <None Include="resources\shaders\Screen.frag" />
+    <None Include="resources\shaders\Screen.vert" />
+    <None Include="resources\shaders\ComplexShaders\SkyBox.frag" />
+    <None Include="resources\shaders\ComplexShaders\SkyBox.vert" />
+    <None Include="resources\shaders\Simple.frag" />
+    <None Include="resources\shaders\Simple.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\textures\awesomeface.png" />
+    <Image Include="resources\textures\container.jpg" />
+    <Image Include="resources\textures\wall.jpg" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{18caac9c-ad35-4b3e-b49c-24b16af28dc7}</ProjectGuid>
+    <RootNamespace>Minecraft</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>BDEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>bin\$(ShortProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>Engine/;Engine/include/;Linking/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>Linking/lib/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>BDEngine.lib;mono-2.0-sgen.lib;assimp-vc143-mt.lib;glfw3.lib;opengl32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

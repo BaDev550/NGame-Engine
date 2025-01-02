@@ -1,0 +1,47 @@
+{
+    "GameObjects": [
+        {
+            "components": [
+                {
+                    "meshPath": "E:/CPP_Projects/Minecraft/resources/models/mario_2/mario_2.obj",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "type": "Static Mesh"
+                },
+                {
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "type": "Rigid Body"
+                }
+            ],
+            "isVisible": true,
+            "name": "Object_1",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "velocity": [
+                0.0,
+                0.0,
+                0.0
+            ]
+        }
+    ]
+}

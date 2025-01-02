@@ -1,0 +1,53 @@
+#ifndef TEMPLATE_COMPONENT_H
+#define TEMPLATE_COMPONENT_H
+
+#include <GameEngine/Components/Component.h>
+
+class CTemplateComponent : public Component
+{
+public:
+    glm::vec3 Position;
+    glm::vec3 Size;
+
+    const char* GetName() const override {
+        return "StaticMeshComponent";
+    }
+    void RenderUI() override;
+
+    CTemplateComponent() {}
+
+    void Start() override {};
+
+    void Draw() override;
+    void UpdateTransform(glm::vec3 pos, glm::vec3 rot, glm::vec3 size) override;
+
+    glm::vec3 GetPosition() override{
+        return Position;
+    }
+
+    void Update(float deltaTime) override{
+        
+    }
+
+    glm::vec3 GetComponentPosition() override {
+        return Position;
+    }
+
+    void SetPosition(glm::vec3 newPos) override {
+        Position = newPos;
+    }
+
+    std::string GetType() const override {
+        return "Static Mesh";
+    }
+
+    void Serialize(nlohmann::json& json) const override {
+        json["meshPath"] = Modelpath;
+    };
+    void Deserialize(const nlohmann::json& json) override {
+        Modelpath = json["meshPath"];
+        loadModel(Modelpath);
+    };
+};
+
+#endif
