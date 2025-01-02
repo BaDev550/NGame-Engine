@@ -1,6 +1,6 @@
 # NGame-Engine
 
-	Hello if you are reading this you wanted to try out my 15 years old ass did dont expect to much
+	Hello if you are reading this you wanted to try out what my 15 years old ass did, dont expect to much
 		First I must tell I did all of the project by reading from
 		https://learnopengl.com but I need to stop before I got into the 
 		advanced lightings becouse of the main engines functionalitys 
