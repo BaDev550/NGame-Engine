@@ -1,5 +1,8 @@
 # NGame-Engine
 
+![2](https://github.com/user-attachments/assets/5791be35-d0c8-41ea-b98b-f84096e2c57b)
+
+ 
 	Hello if you are reading this you wanted to try out what my 15 years old ass did, dont expect to much
 		First I must tell I did all of the project by reading from
 		https://learnopengl.com but I need to stop before I got into the 
@@ -17,6 +20,8 @@
 		first you have out of the project and inside
 		firstof before going inside of the project I want to say I dont use cmake for this project becouse I'm to lazy
 		and I need to say some part of the code I make it local paths so You gonna find and change it D:
+  
+![4](https://github.com/user-attachments/assets/ead305e7-28c2-40c6-94b8-8045321c3f6f)
 
 		Sorry
 
@@ -40,6 +45,7 @@
 			Engine.update();
 
 		I'm not gonna explain all of it...
+![5](https://github.com/user-attachments/assets/a353479c-7bb5-41c8-8846-95408bfabb1f)
 
 		But inside of the engine you gonna do all of that inside of the GUI
 		jsut click the game objects on top right and add game object add static mesh component to object by
@@ -48,7 +54,11 @@
 
 		if you wanna create your own component I created a template for you inside of the component file inside of the 
 		engine/include/gameengine/components
+		
+		and the play stop resume is not working I know the error and how to fix it but I comit it soooooo there is nothing we can do ig
+![1](https://github.com/user-attachments/assets/c56a2438-fb32-4a9d-937f-cc5074e3c059)
 
+![6](https://github.com/user-attachments/assets/1b05b28f-50fb-42b4-87da-8f9868ebd31d)
 		anyways this is all I'm just a chill guy who wants to learn openGL
 
 		Thanks
